@@ -1,0 +1,203 @@
+/*
+Design by Huamin Wang
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #252525;
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 16px;
+	color: #AAAAAA;
+}
+
+w
+{
+    color: #FFFFFF;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #AAAAAA;
+}
+
+
+h1
+{
+    clear:both;
+    color: #FFFFFF;
+	font-size: 18px;
+    margin-top: 0px;
+    padding-top: 30px;
+    margin-bottom: 12px;
+}
+
+h2
+{
+    float:left;
+    clear:both;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+	font-size: 16px;
+}
+
+h3 
+{
+	font-size: 15px;
+}
+
+
+p 
+{
+	margin-top: 0;
+	float: left;
+	clear: both;
+}
+
+ul, ol 
+{
+    margin-top: 0;
+	line-height: 180%;
+}
+
+a 
+{
+	text-decoration: none;
+	color: #FFFFFF;	
+}
+a:hover 
+{
+}
+
+/* Menu */
+#wrapper 
+{
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+/* Menu */
+#menu 
+{
+    clear: both;
+	width: 940px;
+	height: 36px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 30px;
+}
+#menu ul 
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+#menu li 
+{
+	float: left;
+}
+#menu a 
+{
+	display: block;
+	height: 36px;
+	padding: 22px 20px 2px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight:normal;
+	font-size: 16px;
+	color: #AAAAAA;
+	border: none;
+}
+#menu a:hover, #menu .current_page_item a 
+{
+	background: #252525;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#menu .current_page_item a 
+{
+	background: #252525;
+	color: #FFFFFF;
+	border-bottom:solid 3px #FFFFFF;
+}
+#menu .head a 
+{
+	font-size:21px;	
+	padding: 18px 18px 6px 18px;
+}
+
+/* Page */
+#page 
+{
+	float: left;
+    clear: both;
+	width: 900px;
+	margin-left:30px;
+}
+
+/* images */
+img 
+{
+    border: none;
+}    
+.sprite 
+{
+    float: left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.icon 
+{
+    float: left;
+	margin-right:25px;
+	margin-bottom:-5px;
+}
+
+
+/* img shadow */
+.shadow 
+{
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+
+/* footer */
+#footer 
+{
+    float:left;
+    clear: both;
+	width: 940px;
+	height: 50px;
+	margin-top: 28px;
+	border-top: 3px solid #AAAAAA;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#footer p 
+{
+    width: 940px;
+    padding-top: 10px;
+	line-height: normal;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #AAAAAA;
+}
+#footer a 
+{
+	color: #A6A082;
+}

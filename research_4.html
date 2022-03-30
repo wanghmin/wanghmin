@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Huamin Wang, 2013.
+Huamin Wang is an assistant professor at the Ohio State University.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Huamin Wang</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<!-- Specify URL to favicon and Apple touch icon if not located in root directory ELSE delete this tags -->
+<link rel="shortcut icon" href="http://www.osu.edu/favicon.ico">
+<link rel="apple-touch-icon" href="http://www.osu.edu/apple-touch-icon.png">
+</head>
+<body>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+			<li class="head"><a href="index.html">Huamin Wang</a></li>			
+			<li><a href="publications.html">Publications</a></li>
+            <li><a href="students.html">Students</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="misc.html">Miscellaneous</a></li>
+			<li><a href="contact.html">Contacts</a></li>
+            </ul>
+	</div>
+	<!-- end #menu -->
+    <div id="page" style="margin-top:10px; font-size: 15px;">
+        <center><h1>Particle-based Simulation of Fluids and Solids</h1></center>
+        <br>
+        <br>
+        I became more interested in particle-based simulation in recent years, because of its simplicity and flexibility in animating many real-world fluid and solid behaviors. For fluids, I am specifically interested in simulating thin features, such as bubbles, streamlets, and capillary waves. For example, my research team defined a foam bubble as a particle and modeled its irregular shape by a Voronoi diagram.  Using this representation, our simulator can efficiently animate foams with a large number of bubbles, which are too computationally expensive to handle otherwise.
+        Later my colleagues and I studied tensile instability in smoothed particle hydrodynamics.  Based on this study, we developed a new surface tension scheme for preserving thin features in free-surface flows. Recently, we presented a novel technique to animate capillary waves on top of a particle-based simulator, so that the animation result can be enriched by wave effects that are lost in particle-based simulation.
+        <br /><br />
+
+        <p><br />
+            <span style="float:left;margin-right: 30px;"><img class="shadow" src="images/research_6.jpg" /></span>            
+            <b><a href="">Brush painting system</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            To explore the use of fluid simulation in practical applications, our research team collaborates with Adobe Research on the development of a real-time physics-based brush painting system. This system uses a hybrid fluid representation: the paint near a brush is represented by particles, while the rest of the paint is represented by a signed distance field defined on an Eulerian grid.
+            To implement this system on the GPU, we presented a series of new methods to handle the challenge of coupling paint, brush, and canvas together.  The prototype of this system has been presented at SIGGRAPH Asia 2016 and GPU Technology Conference 2016.
+            <br /><br />
+            <i><w>Many of our users, including artists and reviewers, acknowledged that this is the best brush painting system they have ever seen!</w></i>
+         </span>
+        </p>
+
+        <p><br />
+            <span style="float:right;margin-left: 30px;"><img class="shadow" src="images/research_7.jpg" /></span>            
+            <b><a href="">A unified meshless framework</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Given the recent research progress in smoothed particle hydrodynamics, peridynamics, and position-based dynamics, I believe that it is now the right time to formulate a meshless framework for unified simulation of both solids and fluids. Unlike previous frameworks, my framework will use absolutely no mesh, even for elastic bodies. This framework is attractive only when it is efficient and compatible with GPU acceleration. 
+            <br /><br />
+            To this end, my team will explore the transfer of real-time simulation techniques from a mesh-based representation to a meshless representation, which has not been comprehensively studied before.
+            </span>
+        </p>
+
+        <p>
+            <br />
+            <span style="float:left;margin-right: 30px;"><img class="shadow" src="images/research_8.jpg" /></span>
+            <b><a href="">Other fluid simulation methods</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Besides particle-based methods, I have also investigated other ways to simulate fluids in recent years. This includes a deformable surface model for water drop simulation and an Eulerian convection scheme for avoiding numerical dissipation and simulating fluid mixing effects.
+            </span>
+        </p>
+
+
+        <h2><br /><br />RELATED PUBLICATIONS</h2>
+        <p><br />
+            <span class="icon"><a href="Yang-2016-ESS/Yang-2016-ESS.pdf"><img class="shadow" width=100 src="Yang-2016-ESS/Yang-2016-ESS_small.png" /></a></span>
+            Sheng Yang, Xiaowei He, <a href="">Huamin Wang</a>, Sheng Li,  <a href="http://www.graphics.pku.edu.cn/members/wgp/">Guoping Wang</a>, <a href="http://www.fst.umac.mo/en/staff/fstehw.html">Enhua Wu</a> and <a href="http://www.kunzhou.net/">Kun Zhou</a>. 2016. <w>Enriching SPH simulation by approximate capillary waves</w>.
+            In <a href="http://sca2015.usc.edu/"><i>Proceedings of the 15th ACM SIGGRAPH/Eurographics Symposium on Computer Animation (SCA)</i></a>.<br />
+        </p>
+
+        <p>
+            <span class="icon"><a href="Chen-2015-WB/Chen-2015-WB.pdf"><img class="shadow" width=100 src="Chen-2015-WB/Chen-2015-WB_small.png" /></a></span>
+            <a href="http://www.zhilichen.com/">Zhili Chen</a>, <a href="https://sites.google.com/site/kimbmn/home">Byungmoon Kim</a>, <a href="http://www.adobe.com/technology/people/san-jose/daichi-ito.html"> Daichi Ito</a> and <a href="">Huamin Wang</a>.
+            2015. <w>Wetbrush: GPU-based 3D painting simulation at the bristle level</w>.
+            <i>ACM Transactions on Graphics</i> (<i><a href="http://www.siggraph.org">SIGGRAPH Asia</a></i>), vol. 34, no. 6.<br />
+            <a href="Chen-2015-WB/Chen-2015-WB.pdf">[PDF 14MB]</a>
+            <a href="Chen-2015-WB/Chen-2015-WB.mp4">[MP4 in H264, 95MB]</a>
+        </p>  
+
+        <p>
+            <span class="icon"><a href="He-2015-SFM/He-2015-SFM.pdf"><img class="shadow" width=100 src="He-2015-SFM/He-2015-SFM_small.png" /></a></span>
+            Xiaowei He, <a href="">Huamin Wang</a>, Fengjun Zhang, Hongan Wang, <a href="http://www.graphics.pku.edu.cn/members/wgp/">Guoping Wang</a>, <a href="http://www.kunzhou.net/">Kun Zhou</a> and <a href="http://www.fst.umac.mo/en/staff/fstehw.html">Enhua Wu</a>. 2015. <w>Simulation of fluid mixing with interface control</w>.
+            In <a href="http://sca2015.usc.edu/"><i>Proceedings of the 14th ACM SIGGRAPH/Eurographics Symposium on Computer Animation (SCA)</i></a>, pp. 129--135, Los Angeles, USA.<br />
+            <a href="He-2015-SFM/He-2015-SFM.pdf">[PDF 4.2MB]</a>
+            <a href="He-2015-SFM/He-2015-SFM.mp4">[MP4 in H264, 58MB]</a>
+        </p>
+
+        <p>
+            <span class="icon"><a href="He-2014-RSS/He-2014-RSS.pdf"><img class="shadow" width=100 src="He-2014-RSS/He-2014-RSS_small.png" /></a></span>
+            Xiaowei He, <a href="">Huamin Wang</a>, Fengjun Zhang, Hongan Wang, <a href="http://www.graphics.pku.edu.cn/members/wgp/">Guoping Wang</a> and <a href="http://www.kunzhou.net/">Kun Zhou</a>. 2014. <w>Robust simulation of small-scale thin features in SPH-based free surface flows</w>.
+            <i>ACM Transactions on Graphics</i> (presented at <i><a href="http://www.siggraph.org">SIGGRAPH</a></i>), vol. 34, no. 1, pp. 7:1--7:9.<br />
+            <a href="He-2014-RSS/He-2014-RSS.pdf">[PDF 6.7MB]</a>
+        </p>
+
+        <p>
+            <span class="icon"><a href="Busaryev-2012-ABI/Busaryev-2012-ABI.pdf"><img class="shadow" width=100 src="Busaryev-2012-ABI/Busaryev-2012-ABI_small.png" /></a></span>
+            <a href="http://www.cse.ohio-state.edu/~busaryev/">Oleksiy Busaryev</a>,
+            <a href="http://www.cse.ohio-state.edu/~tamaldey/">Tamal K. Dey</a>, <a href="">Huamin Wang</a> and <a href="http://www.zren.info/">Zhong Ren</a>.
+            2012. <w>Animating bubble interactions in a liquid foam.</w> <i>ACM Transactions on Graphics</i> (<i><a href="http://www.siggraph.org">SIGGRAPH</a></i>), vol. 31, no. 4, pp. 63:1--63:8.<br />
+            <a href="Busaryev-2012-ABI/Busaryev-2012-ABI.pdf">[PDF 3.8MB]</a>
+            <a href="Busaryev-2012-ABI/Busaryev-2012-ABI.mp4">[MP4 in H264, 98MB]</a>
+        </p>
+
+        <p>
+            <span class="icon"><a href="Zhang-2012-DMS/Zhang-2012-DMS.pdf"><img class="shadow" width=100 src="Zhang-2012-DMS/Zhang-2012-DMS-small.png" /></a></span>
+            Yizhong Zhang, <a href="">Huamin Wang</a>, Shuai Wang, <a href="http://www.cse.msu.edu/~ytong">Yiying Tong</a> and <a href="http://kunzhou.net/">Kun Zhou</a>.
+            2012. <w>A deformable surface model for real-time water drop animation.</w>
+            <i><a href="http://www.computer.org/portal/web/tvcg/">IEEE Transactions on Visualization and Computer graphics</a></i>, vol. 18, no. 8, pp. 1281--1289.<br />
+            <a href="Zhang-2012-DMS/Zhang-2012-DMS.pdf">[PDF 1.8MB]</a>
+            <a href="Zhang-2012-DMS/Zhang-2012-DMS-bib.html">[Bibtex]</a>
+        </p>
+
+
+        </div>
+    <!-- end #page -->
+
+    <div id="footer">
+	<p>Copyright (c) 2013 Huamin Wang. All rights reserved. Design by <a href="http://www.cse.ohio-state.edu/~whmin/">Huamin Wang</a>.<br>
+    Last updated: <script language="JavaScript">
+    <!-- Hide JavaScript...
+    var LastUpdated = document.lastModified;
+    document.writeln (LastUpdated);
+    // End Hiding -->
+    </script>. 
+    </p>
+    </div>
+</div>
+
+</body>
+</html>

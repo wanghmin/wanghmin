@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Towards Space-time Light Field Rendering</title>
+</head>
+
+<body text="#FFFFFF" bgcolor="#000000">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="76%" id="AutoNumber2">
+  <tr>
+    <td width="100%">
+
+<h1 align="center"><font face="Verdana" size="5"><span class="pub_title">Towards Space-time Light 
+Field Rendering</span></font></h1>
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="75%" id="AutoNumber1" height="1">
+  <tr>
+    <td width="27%" align="center" height="1">
+
+    </td>
+    <td width="42%" align="center" height="1">
+
+<h2 style="margin-top: 0; margin-bottom: 0"><span style="font-weight: 400">
+<font face="Verdana" size="3"><a href="http://www.cc.gatech.edu/~whmin">
+<font color="#FFFFFF">Huamin Wang</font></a></font></span></h2>
+    </td>
+    <td width="94%" align="center" height="1"><font face="Verdana">
+    <a href="http://www.cs.uky.edu/~ryang"><font color="#FFFFFF">Ruigang Yang</font></a></font></td>
+  </tr>
+  <tr>
+    <td width="27%" align="center" height="1"></td>
+    <td width="42%" align="center" height="1"><font face="Verdana">Georgia 
+    Institute of Technology</font></td>
+    <td width="94%" align="center" height="1"><font face="Verdana">University of 
+    Kentucky</font></td>
+  </tr>
+</table>
+    <p align="center"><font face="Verdana"><i> ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) 
+2005</i></font></p>
+    <p align="left">&nbsp;</p>
+    <p align="left"><font face="Verdana"><a href="temporal_light_field.pdf">
+    <font color="#FFFFFF">Full 
+    Paper (PDF, 2.8Mbytes)</font></a></font></p>
+    <p align="left"><font face="Verdana"><a href="space-time-LFR-divx.avi">
+    <font color="#FFFFFF">Video 
+    (encoded in DIVX, 4.1Mbytes)</font></a></font></p>
+<p>&nbsp;</p>
+<p><font face="Verdana"><b>Abstract</b>&nbsp;</font></p>
+<p><font face="Verdana">So far extending light field rendering to dynamic scenes 
+has been trivially treated as the rendering of static light fields stacked in 
+time. This type of approaches requires input video sequences in strict 
+synchronization and allows only discrete exploration in the temporal domain 
+determined by the capture rate. In this paper we propose a novel framework, 
+space-time light field rendering, which allows continuous exploration of a 
+dynamic scene in both spatial and temporal domain with unsynchronized input 
+video sequences.<br>
+<br>
+In order to synthesize novel views from any viewpoint at any time instant, we 
+develop a two-stage rendering algorithm. We first interpolate in the temporal 
+domain to generate globally synchronized images using a robust spatial-temporal 
+image registration algorithm followed by edge-preserving image morphing. We then 
+interpolate those software-synchronized images in the spatial domain to 
+synthesize the final view. Our experimental results show that our approach is 
+robust and capable of maintaining photo-realistic results.</font></p>
+
+<p>&nbsp;</p>
+
+<p><font face="Verdana"><b>Results</b></font></p>
+
+<p><font face="Verdana"><img border="0" src="left_before_book.jpg" width="310" height="240"><img border="0" src="center_before_book.jpg" width="310" height="240"><img border="0" src="right_before_book.jpg" width="310" height="240"></font></p>
+
+<p><font face="Verdana"><img border="0" src="left_after_book.jpg" width="310" height="240"><img border="0" src="center_after_book.jpg" width="310" height="240"><img border="0" src="right_after_book.jpg" width="310" height="240"></font></p>
+
+    <p align="center"><font face="Verdana" size="2">Figure 1: Synthesized results 
+    of the book sequence. Top: traditional LFR with unsynchronized frames. 
+    Bottom: Our space-time LFR.</font></p>
+    <p>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

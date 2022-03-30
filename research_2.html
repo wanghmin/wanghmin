@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Huamin Wang, 2013.
+Huamin Wang is an assistant professor at the Ohio State University.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Huamin Wang</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<!-- Specify URL to favicon and Apple touch icon if not located in root directory ELSE delete this tags -->
+<link rel="shortcut icon" href="http://www.osu.edu/favicon.ico">
+<link rel="apple-touch-icon" href="http://www.osu.edu/apple-touch-icon.png">
+</head>
+<body>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+			<li class="head"><a href="index.html">Huamin Wang</a></li>			
+			<li><a href="publications.html">Publications</a></li>
+            <li><a href="students.html">Students</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="misc.html">Miscellaneous</a></li>
+			<li><a href="contact.html">Contacts</a></li>
+            </ul>
+	</div>
+	<!-- end #menu -->
+    <div id="page" style="margin-top:10px; font-size: 15px;">
+        <center><h1>Fast and Accurate Clothing Simulation</h1></center>
+        <br>
+        <br>
+        The trillion-dollar fashion industry deeply influences our lives everyday. Being able to efficiently and accurately simulate clothing will not only broaden graphics applications, but also have a great potential to revolutionize the whole fashion industry, from design to retailing. My research team is one of the leading teams in this field worldwide.
+        My work on cloth dynamics solvers  has already been covered previously.  In this section, I will summarize my additional work focused on cloth collisions and contacts.
+        <br /><br />
+
+        <p><br />
+            <span style="float:left;margin-right: 30px;"><img class="shadow" src="images/research_3.jpg" /></span>            
+            <b><a href="">GPU-based continuous collision detection</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Compared with self-collisions of deformable solids, self-collisions of cloth are much more complex. Existing cloth simulators often use the continuous collision detection (CCD) technique, which is difficult to be developed with efficiency and accuracy. Since false negatives are more critical than false positive, researchers suggested the use of error bounds to avoid false negatives caused by numerical errors. But then how to determine error bound values becomes a dilemma: smaller values may not sufficiently eliminate false negatives, while bigger values will cause too many false positives.
+            To address this issue, I systematically analyzed the errors occurred in CCD and derived an error bound estimation scheme to strictly ensure the safety of CCD for the first time, without using expensive exact arithmetics.  
+            <br /><br />
+            To further reduce the collision cost, my colleagues and I recently studied the development of an end-to-end simulation system that exploits GPU parallelism for time integration, collision detection, and collision handling.
+            This system has already demonstrated its high performance on the GPU and it is expected to serve as the foundation for future graphics research in this direction.           
+         </span>
+        </p>
+
+        <p><br />
+            <span style="float:right;margin-left: 30px;"><img class="shadow" src="images/research_4.jpg" /></span>            
+            <b><a href="">Cloth contact mechanics</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            The second topic I am interested in is how to handle collisions and contacts, once they get detected. 
+        My research team studied the data-driven approach for modeling complex cloth friction effects, and invented a fast algorithm for animating air trapped within multiple cloth layers. 
+        For virtual fitting room applications, we investigated fast detection and handling of collisions between virtual clothing and human bodies, and automatic human body posing from point cloud data. 
+            <br /><br />  
+        Although the clothing simulation research still has a long way to go, our team is making solid research progress and our contributions are expected to play an important role in the success of fashion-related applications in the future.            </span>
+        </p>
+
+
+
+
+        <h2><br /><br />RELATED PUBLICATIONS</h2>
+        <p><br />
+            <span class="icon"><a href="Tang-2016-CAM/Tang-2016-CAM.pdf"><img class="shadow" width=100 src="Tang-2016-CAM/Tang-2016-CAM_small.png" /></a></span>
+            <a href="http://give.zju.edu.cn/en/memberIntro/tm.html">Min Tang</a>,
+            <a href="">Huamin Wang</a>,
+            Le Tang,
+            <a href="http://give.zju.edu.cn/en/memberHomepage/TongRuofeng.html">Ruofeng Tong</a> and
+            <a href="http://www.cs.unc.edu/~dm/">Dinesh Manocha</a>. 2016. <w>CAMA: Contact-aware matrix assembly with unified collision handling for GPU-based cloth simulation</w>.
+            <i>Computer Graphics Forum</i> (<i><a href="http://www.siggraph.org">Eurographics</a></i>).<br />
+            <a href="Tang-2016-CAM/Tang-2016-CAM.pdf">[PDF 2.5MB]</a>
+            <a href="Tang-2016-CAM/Tang-2016-CAM.mp4">[MP4 in H264, 62MB]</a>
+        </p>
+
+        <p>
+            <span class="icon"><a href="Dey-2015-APM/Dey-2015-APM.pdf"><img class="shadow" width=100 src="Dey-2015-APM/Dey-2015-APM_small.png" /></a></span>
+            <a href="http://www.cse.ohio-state.edu/~tamaldey/">Tamal K. Dey</a>, Bo Fu, <a href="">Huamin Wang</a> and Lei Wang. 2015. <w>Automatic posing of a meshed human model using point clouds</w>.
+            <i>Computer and Graphics</i> (<i><a href="http://www.mae.cuhk.edu.hk/~smi2014/">Shape Modeling International</a></i>), vol. 16, no. C, pp. 14--24.<br />
+            <a href="Dey-2015-APM/Dey-2015-APM.pdf">[PDF 11.5MB]</a>
+            <a href="Dey-2015-APM/Dey-2015-APM.pptx">[Slides in PPTX, 7.7MB]</a>
+            <a href="Dey-2015-APM/Dey-2015-APM.mp4">[MP4 in H264, 9.2MB]</a>
+        </p>
+
+        <p>
+            <span class="icon"><a href="Wang-2014-DCC/Wang-2014-DCC.pdf"><img class="shadow" width=100 src="Wang-2014-DCC/Wang-2014-DCC_small.png" /></a></span>
+            <a href="">Huamin Wang</a>. 2014. <w>Defending continuous collision detection against errors</w>.
+            <i>ACM Transactions on Graphics</i> (<i><a href="http://www.siggraph.org">SIGGRAPH</a></i>), vol. 33, no. 4, pp. 122:1--122:10.<br />
+            <a href="Wang-2014-DCC/Wang-2014-DCC.pdf">[PDF 2.0MB]</a>
+            <a href="Wang-2014-DCC/Wang-2014-DCC_supp.pdf">[Supplemental PDF 0.1MB]</a>
+            <a href="Wang-2014-DCC/Wang-2014-DCC.mp4">[MP4 in H264, 44MB]</a>
+            <a href="Wang-2014-DCC/SAFE_CCD.zip">[Code in C++]</a>
+        </p> 
+
+        <p>
+            <span class="icon"><a href="Ye-2014-VTO/Ye-2014-VTO.pdf"><img class="shadow" width=100 src="Ye-2014-VTO/Ye-2014-VTO_small.png" /></a></span>
+            <a href="http://maoye.wordpress.com/">Mao Ye</a>, <a href="">Huamin Wang</a>, Nianchen Deng, <a href="http://dalab.se.sjtu.edu.cn/www/home/?page_id=19">Xubo Yang</a> and
+            <a href="http://www.cs.uky.edu/~ryang">Ruigang Yang</a>. 2014. <w>Real-time human pose and shape estimation for virtual try-on using a single commodity depth camera</w>.
+            <i><a href="http://www.computer.org/portal/web/tvcg/">IEEE Transactions on Visualization and Computer Graphics</a></i> (<i><a href="http://ieeevr.org/2014/">IEEE Virtual Reality</a></i>), vol. 20, no. 4, pp. 550--559.<br />
+            <a href="Ye-2014-VTO/Ye-2014-VTO.pdf">[PDF 1.6MB]</a>
+            <a href="Ye-2014-VTO/Ye-2014-VTO.mp4">[MP4 in H264, 39MB]</a>
+        </p>
+
+        <p>
+            <span class="icon"><a href="Chen-2013-MFA/Chen-2013-MFA.pdf"><img class="shadow" width=100 src="Chen-2013-MFA/Chen-2013-MFA_small.png" /></a></span>
+            <a href="http://www.zhilichen.com/">Zhili Chen</a>,
+            <a href="http://www.cse.ohio-state.edu/~fengr/">Renguo Feng</a> and <a href="">Huamin Wang</a>.
+            2013. <w>Modeling friction and air effects between cloth and deformable bodies.</w> <i>ACM Transactions on Graphics</i> (<i><a href="http://www.siggraph.org">SIGGRAPH</a></i>), vol. 32, no. 4, pp. 88:1--88:8.<br />
+            <a href="Chen-2013-MFA/Chen-2013-MFA.pdf">[PDF 6.4MB]</a>
+            <a href="Chen-2013-MFA/Chen-2013-MFA.mp4">[MP4 in H264, 130MB]</a>
+            <a href="Chen-2013-MFA/Chen-2013-MFA_supp.pdf">[Friction data in PDF 190KB]</a>
+            <br />
+        </p>
+
+        </div>
+    <!-- end #page -->
+
+    <div id="footer">
+	<p>Copyright (c) 2013 Huamin Wang. All rights reserved. Design by <a href="http://www.cse.ohio-state.edu/~whmin/">Huamin Wang</a>.<br>
+    Last updated: <script language="JavaScript">
+    <!-- Hide JavaScript...
+    var LastUpdated = document.lastModified;
+    document.writeln (LastUpdated);
+    // End Hiding -->
+    </script>. 
+    </p>
+    </div>
+</div>
+
+</body>
+</html>
