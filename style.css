@@ -1,8 +1,8 @@
 /*
 Design by Huamin Wang
 */
-
-body {
+body 
+{
 	margin: 0;
 	padding: 0;
 	background: #252525;
@@ -10,12 +10,10 @@ body {
 	font-size: 16px;
 	color: #AAAAAA;
 }
-
 w
 {
     color: #FFFFFF;
 }
-
 h1, h2, h3
 {
 	margin: 0;
@@ -23,8 +21,6 @@ h1, h2, h3
 	font-weight: normal;
 	color: #AAAAAA;
 }
-
-
 h1
 {
     clear:both;
@@ -34,7 +30,6 @@ h1
     padding-top: 30px;
     margin-bottom: 12px;
 }
-
 h2
 {
     float:left;
@@ -44,26 +39,21 @@ h2
     color: #FFFFFF;
 	font-size: 16px;
 }
-
 h3 
 {
 	font-size: 15px;
 }
-
-
 p 
 {
 	margin-top: 0;
 	float: left;
 	clear: both;
 }
-
 ul, ol 
 {
     margin-top: 0;
 	line-height: 180%;
 }
-
 a 
 {
 	text-decoration: none;
@@ -72,7 +62,6 @@ a
 a:hover 
 {
 }
-
 /* Menu */
 #wrapper 
 {
@@ -80,8 +69,6 @@ a:hover
 	margin: 0 auto;
 	padding: 0;
 }
-
-
 /* Menu */
 #menu 
 {
@@ -174,8 +161,6 @@ img
 	/* For IE 5.5 - 7 */
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
-
-
 /* footer */
 #footer 
 {
@@ -200,4 +185,19 @@ img
 #footer a 
 {
 	color: #A6A082;
+}
+.button {
+	background-color: #777777;
+	border: none;
+	color: white;
+	padding: 2px 6px;
+	margin: 4px 0px 4px 0px;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+.button:hover {
+	background-color: #999999;
+	color: white;
 }
